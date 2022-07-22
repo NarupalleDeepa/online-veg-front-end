@@ -1,0 +1,26 @@
+<!--<h2 style="color: rebeccapurple; background-color: beige;"> Cutomers List</h2><br>-->
+
+<table class = "table table-striped">
+
+    <thead style="font-family: Arial, Helvetica, sans-serif; font-size: larger;font-weight: 400;color:firebrick;">
+        <tr>
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody style="font-style: oblique; font-size: larger; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <tr *ngFor = "let customer of customers" >
+            <td> {{ customer.firstName }} </td>
+            <td> {{ customer.lastName }} </td>
+            <td> {{ customer.emailId }} </td>
+            <td>
+                <button (click) = "updateCustomer(customer.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteCustomer(customer.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "customerDetails(customer.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table><br><br>
+

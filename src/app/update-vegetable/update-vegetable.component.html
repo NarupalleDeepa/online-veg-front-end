@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Vegetable </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>  Id</label>
+            <input type="number" class ="form-control" id = "VegetableId"
+                [(ngModel)] = "vegetable.vegId" name = "vegetableId">
+        </div>
+    
+        <div class="form-group">
+            <label>  Name</label>
+            <input type="text" class ="form-control" id = "VegetableName"
+                [(ngModel)] = "vegetable.vegName" name = "vegetableName">
+        </div>
+        <div class="form-group">
+            <label>  Cost</label>
+            <input type="text" class ="form-control" id = "VegetableCost"
+                [(ngModel)] = "vegetable.vegCost" name = "vegetableCost">
+        </div>
+    
+
+
+        <div class="form-group">
+            <label> Quantity</label>
+            <input type="number" class ="form-control" id = "Quantity"
+                [(ngModel)] = "vegetable.quantity" name = "quantity">
+        </div>
+
+        <div class="form-group">
+            <label> Discount Type</label>
+            <input type="text" class ="form-control" id = "DiscountType"
+                [(ngModel)] = "vegetable.discountType" name = "discountType">
+        </div>
+
+        <div class="form-group">
+            <label> Discount </label>
+            <input type="text" class ="form-control" id = "Discount"
+                [(ngModel)] = "vegetable.discount" name = "discount">
+        </div>
+       
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div>

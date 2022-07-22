@@ -1,0 +1,31 @@
+<!--<h2> Vegetables List</h2>-->
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Vegetable Id</th>
+            <th> Vegetable Name </th>
+            <th> Vegetable Cost </th>
+            
+            <th> Quantity</th>
+            <th> Discount</th>
+            <th> Discount Type</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let vegetable of vegetables" >
+            <td> {{ vegetable.vegId }} </td>
+            <td> {{ vegetable.vegName }} </td>
+            <td> {{ vegetable.vegCost }} </td>
+            <td> {{ vegetable.quantity }} </td>
+            <td> {{ vegetable.discount }} </td>
+            <td> {{ vegetable.discountType }} </td>
+            <td>
+                <button (click) = "updateVegetable(vegetable.vegId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteVegetable(vegetable.vegId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "vegetableDetails(vegetable.vegId)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+              <!--  <button  name="{{job.companyName}}" #abc (click)="selectJob(abc.name)"  class = "btn btn-info" style="margin-left: 10px"> {{job.status }}</button>-->
+            </td>
+        </tr>
+    </tbody>
+</table><br><br><br><br><br><br><br>

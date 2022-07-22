@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <!--<h3 style="color:rgba(69, 7, 162, 0.959);"> Create Customer </h3><br>-->
+    <form (ngSubmit) = "onSubmit()"><br>
+    
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;"> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "customer.firstName" name = "firstName">
+        </div><br>
+    
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;"> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "customer.lastName" name = "lastName">
+        </div><br>
+    
+        <div class="form-group">
+            <label style="  font-family: Arial, Helvetica, sans-serif; font-size: 25px;">Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "customer.emailId" name = "emailId">
+        </div><br>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button><br><br><br>
+    
+    </form>
+    </div><br><br>
